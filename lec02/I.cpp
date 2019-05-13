@@ -5,7 +5,7 @@ using namespace std;
 vector<int> primes = {2, 3,};
 
 void fill(int m) {
-    for (int k = primes.back(); k <= m; k += 2) {
+    for (int k = primes.back() + 2; k <= m; k += 2) {
         bool flag = true;
         for (int p:primes) {
             if (p * p > k)break;
