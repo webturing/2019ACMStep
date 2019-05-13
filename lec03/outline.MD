@@ -2,41 +2,46 @@
 
 ## 字符串
 
-### 字符 #include <cctype>
+### 字符 `#include <cctype>`
 - tolower/toupper/
 - isupper/islower/isalpha/isdigit/isxdigit 
 
-### 字符串 C风格
+### 字符串 C风格`#include<cstring>`
 - strlen
 - 串拷贝/连接/字典比较:strcat/strcpy
 - 类型转化 sscanf/sprintf
 - 串查找 strstr
 
 
-### 字符串II C++ string
+### 字符串II C++ string `#include<string>`
 - size/length
 - reverse
 - find
 - istringstream/ostringstream
 
-###基本应用
+###基本应用   
 - 排序 sort/qsort
 - 翻转 reverse
 - 统计查找  map
 
 ## STL 数据结构：
-### 元组 pair
+### 元组 pair 
+- first/second
+- 内置了字典序和equal
+- make_pair
+
 ### 线性  
 - vector
 - list
 - stack
 - queue
+
 ### 树 
 - set/multiset
 - priority_queue
 - map
 
-## STL算法
+## STL算法 `#include<algorithm>`
 ### 排序
 - 默认非降序
 - 增序
