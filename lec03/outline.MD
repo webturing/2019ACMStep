@@ -4,16 +4,31 @@
 
 ### 字符 `#include <cctype>`
 - tolower/toupper/
+  - '0'-'9'   '0'=48
+  - 'a'-'z'    'a'=97
+  - 'A'-'Z'   'A'=65
 - isupper/islower/isalpha/isdigit/isxdigit 
 
 ### 字符串 C风格`#include<cstring>`
-- strlen
-- 串拷贝/连接/字典比较:strcat/strcpy
-- 类型转化 sscanf/sprintf
-- 串查找 strstr
 
+C字符串 以第一个'\0'=0=NULL 为自然终止符的字符序列
+
+- strlen  ` int strlen(char*s){ char *p=s;while(*p)++p;return p-s;}`//O(n)
+
+  ```for(int i=0;i<strlen(s);i++)cout<<s[i]<<endl;```//O(n^2)
+
+  ``` for(int i=0,n=strlen(n);i<n;i++)cout<<s[i]<<endl;```//O(n)
+
+- 串拷贝/连接/字典比较:strcat/strcpy
+
+- 类型转化 sscanf/sprintf
+
+- 串查找 strstr //KMP
 
 ### 字符串II C++ string `#include<string>`
+
+C++字符串  vector<char>  //长度和内容可以改变的动态的字符数组
+
 - size/length
 - reverse
 - find
